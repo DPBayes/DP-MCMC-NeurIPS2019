@@ -19,9 +19,9 @@ draw_dp_chain = True
 learn_multi_var = True
 
 # filename extensions if not from scratch
-nondp_ext = '15_10'
-dp_ext = '15_10'
-prop_var_ext = '15_10'
+nondp_ext = ''
+dp_ext = ''
+prop_var_ext = ''
 
 ## Generate toy data from Gaussian mixture
 if generate_data :
@@ -40,6 +40,7 @@ if generate_data :
 	# Save data 
 	data = pd.DataFrame(data)
 	data.to_csv('./data/MoG_toy_data.csv', index=False)
+	data = data.values.squeeze()
 
 else : 
 	# Read data

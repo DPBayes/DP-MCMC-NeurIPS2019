@@ -6,7 +6,7 @@ from X_corr import get_x_corr_params
 from plot_approx_errors import plot_fig4
 import torch
 
-learn_X_corr = False
+learn_X_corr = True
 
 if learn_X_corr:
 	np.random.seed(123)

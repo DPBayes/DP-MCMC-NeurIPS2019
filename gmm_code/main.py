@@ -11,12 +11,12 @@ import pickle, datetime, random
 import X_corr
 
 ## Following booleans set whether to run experiments from scratch or read parameters from files
-generate_data = False
-learn_start_with_dpvi = False
-learn_X_corr = False
+generate_data = True
+learn_start_with_dpvi = True
+learn_X_corr = True
 draw_non_dp_chain = True
-draw_dp_chain = False
-learn_multi_var = False
+draw_dp_chain = True
+learn_multi_var = True
 
 # filename extensions if not from scratch
 nondp_ext = '15_10'
